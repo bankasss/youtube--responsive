@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/*--------------------------------------------
+ブレイクポイント
+--------------------------------------------*/
+/*--------------------------------------------
+px→vw変換
+--------------------------------------------*/
+/*--------------------------------------------
+よく使うやつ
+--------------------------------------------*/
+/* 色 */
+/* フォント */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+/*-------------------------------------------
+共通
+-------------------------------------------*/
+body {
+  position: relative;
+  font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #5f759b;
+  background-color: #f1f1f1;
+  line-height: 1.6;
+  -webkit-font-feature-settings: "palt" 1;
+          font-feature-settings: "palt" 1;
+  overflow-x: hidden;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*-------------------------------------------- 
+汎用クラス
+--------------------------------------------*/
+/* 余白 */
+.mbS {
+  margin-bottom: 2.6666666667vw !important;
+}
+@media screen and (min-width: 1080px) {
+  .mbS {
+    margin-bottom: 20px !important;
+  }
+}
+
+.mbM {
+  margin-bottom: 5.3333333333vw !important;
+}
+@media screen and (min-width: 1080px) {
+  .mbM {
+    margin-bottom: 40px !important;
+  }
+}
+
+.mtL {
+  margin-top: 8vw !important;
+}
+@media screen and (min-width: 1080px) {
+  .mtL {
+    margin-top: 60px !important;
+  }
+}
+
+.mbL {
+  margin-bottom: 8vw !important;
+}
+@media screen and (min-width: 1080px) {
+  .mbL {
+    padding-bottom: 60px !important;
+  }
+}
+
+.pbS {
+  margin-bottom: 2.6666666667vw !important;
+}
+@media screen and (min-width: 1080px) {
+  .pbS {
+    padding-bottom: 20px !important;
+  }
+}
+
+.pbM {
+  padding-bottom: 5.3333333333vw !important;
+}
+@media screen and (min-width: 1080px) {
+  .pbM {
+    padding-bottom: 40px !important;
+  }
+}
+
+.ptL {
+  padding-top: 8vw !important;
+}
+@media screen and (min-width: 1080px) {
+  .ptL {
+    padding-top: 60px !important;
+  }
+}
+
+.pbL {
+  padding-bottom: 8vw !important;
+}
+@media screen and (min-width: 1080px) {
+  .pbL {
+    padding-bottom: 60px !important;
+  }
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  z-index: 0;
+  padding: 0 8vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media screen and (min-width: 1080px) {
+  .container {
+    max-width: 750px;
+    width: 100%;
+    padding: 0 60px;
+  }
+}
+.container iframe {
+  width: 84vw;
+  height: 47.25vw;
+}
+@media screen and (min-width: 1080px) {
+  .container iframe {
+    max-width: 630px;
+    max-height: 354.375px;
+  }
+}
+
+.container2 {
+  display: block;
+  position: relative;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  z-index: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media screen and (min-width: 1080px) {
+  .container2 {
+    width: 100%;
+    max-width: 750px;
+  }
+}
+.container2 iframe {
+  width: 100vw;
+  height: 56.25vw;
+}
+@media screen and (min-width: 1080px) {
+  .container2 iframe {
+    max-width: 750px;
+    max-height: 421.875px;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #5f759b;
+  font-size: 2.9333333333vw;
+  font-weight: bold;
+}
+@media screen and (min-width: 1080px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+h1 span {
+  font-size: 2.1333333333vw;
+}
+@media screen and (min-width: 1080px) {
+  h1 span {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import "_mixin";
+
+/*-------------------------------------------
+共通
+-------------------------------------------*/
+body{
+  position: relative;
+  font-family: $font_main;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: $color_main;
+  background-color: $color_bg;
+  line-height: 1.6;
+  font-feature-settings: "palt" 1;
+  overflow-x: hidden;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*-------------------------------------------- 
+汎用クラス
+--------------------------------------------*/
+/* 余白 */
+.mbS{
+  margin-bottom: pxVw(20) !important;
+  @include pc {
+    margin-bottom: 20px !important;
+  }
+}
+.mbM{
+  margin-bottom: pxVw(40) !important;
+  @include pc {
+    margin-bottom: 40px !important;
+  }
+}
+.mtL{
+  margin-top: pxVw(60) !important;
+  @include pc {
+    margin-top: 60px !important;
+  }
+}
+.mbL{
+  margin-bottom: pxVw(60) !important;
+  @include pc {
+    padding-bottom: 60px !important;
+  }
+}
+.pbS{
+  margin-bottom: pxVw(20) !important;
+  @include pc {
+    padding-bottom: 20px !important;
+  }
+}
+.pbM{
+  padding-bottom: pxVw(40) !important;
+  @include pc {
+    padding-bottom: 40px !important;
+  }
+}
+.ptL{
+  padding-top: pxVw(60) !important;
+  @include pc {
+    padding-top: 60px !important;
+  }
+}
+.pbL{
+  padding-bottom: pxVw(60) !important;
+  @include pc {
+    padding-bottom: 60px !important;
+  }
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  z-index: 0;
+  padding: 0 8vw;
+  box-sizing: border-box;
+  @include pc {
+    max-width: 750px;
+    width: 100%;
+    padding: 0 60px;
+  }
+  iframe {
+    width: calc(100vw - 16vw);
+    height: calc(calc(100vw - 16vw) / 16 * 9);
+    @include pc {
+      max-width: calc(750px - 120px);
+      max-height: calc(calc(750px - 120px) / 16 * 9);
+    }
+  }
+}
+
+.container2 {
+  display: block;
+  position: relative;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFFFFF;
+  z-index: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @include pc {
+    width: 100%;
+    max-width: 750px;
+  }
+  iframe {
+    width: 100vw;
+    height: calc(100vw / 16 * 9);
+    @include pc {
+      max-width: 750px;
+      max-height: calc(750px / 16 * 9);
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  color: $color_main;
+  font-size: pxVw(22);
+  font-weight: bold;
+  @include pc {
+    font-size: 32px;
+  }
+  span {
+    font-size: pxVw(16);
+    @include pc {
+      font-size: 20px;
+    }
+  }
+}

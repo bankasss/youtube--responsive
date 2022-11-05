@@ -1,0 +1,33 @@
+@charset "utf-8";
+/*--------------------------------------------
+ブレイクポイント
+--------------------------------------------*/
+@mixin pc {
+    @media screen and (min-width: 1080px) {
+    @content;
+    }
+}
+@mixin sp {
+    @media screen and (min-width: 750px) {
+    @content;
+    }
+}
+
+/*--------------------------------------------
+px→vw変換
+--------------------------------------------*/
+$viewport: 750;
+@function pxVw($px) {
+	@return (($px / $viewport) * 100) + vw;
+}
+
+/*--------------------------------------------
+よく使うやつ
+--------------------------------------------*/
+/* 色 */
+$color_main:#5f759b;
+$color_bg:#f1f1f1;
+
+/* フォント */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+$font_main: YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
